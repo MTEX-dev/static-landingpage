@@ -3,15 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>MTEX.dev | Developer-First Platform</title>
+    <meta name="title" content="MTEX.dev | Developer-First Platform">
+    <meta name="description" content="A developer-first ecosystem building lightweight, fast, and open-source tools. Home of tw.mtex.dev, nx.mtex.dev, and the getmy API suite.">
+    <meta name="keywords" content="MTEX, Developer Tools, API, TailwindCSS Library, Open Source, Static Hosting, Web Development">
+    <meta name="author" content="Fabian Ternis">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mtex.dev/">
+    <meta property="og:title" content="MTEX.dev | Developer-First Platform">
+    <meta property="og:description" content="Building the tools we actually want to use. Simplicity, speed, and transparency for modern developers.">
+    <meta property="og:image" content="https://github.com/MTEDdotDev.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mtex.dev/">
+    <meta property="twitter:title" content="MTEX.dev">
+    <meta property="twitter:description" content="Building the tools we actually want to use. Simplicity and speed for modern developers.">
+    <meta property="twitter:image" content="https://github.com/MTEDdotDev.png">
+
+    <link rel="icon" type="image/x-icon" href="https://github.com/MTEDdotDev.png">
+    <link rel="apple-touch-icon" href="https://github.com/MTEDdotDev.png">
+    <meta name="theme-color" content="#0a0a0a">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Inter:wght@400;700&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #ededed; }
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #0a0a0a; 
+            color: #ededed; 
+            scrollbar-gutter: stable;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #262626; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #333; }
+
         .mono { font-family: 'Fira Code', monospace; }
-        .gradient-text { background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gradient-text { 
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+        
         .pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
         @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+        
+        ::selection {
+            background-color: rgba(79, 172, 254, 0.3);
+            color: #fff;
+        }
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
